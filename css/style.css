@@ -3,23 +3,37 @@ body {
 }
 
 /* Containers */
-.alert-cointaier {
+
+.container-wrrapper {
     
+} 
+
+.container-wrapper--red{
+    background-color: #ffb13b;
+    color: white;
 }
+
+.container-wrapper--table {
+    background-color: #e47963;
+    color: white;
+}
+
+.alert-cointainer {}
 
 .callout-container {
     height: 100vh;
-    
-    background: url('../images/whiskey-background.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  
-  display: flex;
-  align-items: center;
-  
-  position: relative;
+
+    background: url('../images/whiskey-background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    justify-content: center;
 }
 
 .opaque-overlay {
@@ -31,16 +45,84 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-
-
-
-.quotes-container {
-    
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px
 }
 
-.features-container {
-    
+
+
+
+/* Navbar */
+
+.navbar {
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
+    border: 0;
 }
+
+.navbar-default .navbar-collapse {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border: 0;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    color: white;
+}
+
+.navbar .navbar-brand:hover {
+    color: white;
+}
+
+.navbar-default .navbar-nav a, {
+    font-weight: bold;
+}
+
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background: transparent;
+
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+}
+
+.navbar-btn {
+    border: 0;
+    border-radius: 16px;
+    width: 100px;
+    background-color: #ffb13b;
+    color: white;
+}
+
+.navbar-btn:hover {
+    background-color: #c78219;
+    border-color: #c78219;
+    color: white;
+}
+
 
 /* jumbotron */
 
@@ -58,7 +140,7 @@ body {
 .jumbotron .lead {
     color: #dcdcdc;
     margin: 25px 0;
-    
+
 }
 
 .jumbotron small {
@@ -71,6 +153,7 @@ body {
     width: 75px;
     height: 5px;
     border: 0;
+    background-color: #444;
 }
 
 .block-divider--orange {
@@ -78,7 +161,11 @@ body {
 }
 
 .block-divider--short {
-    width: 45px;
+    width: 35px;
+}
+
+.block-divider--white {
+    background-color: white;
 }
 
 /* buttons */
@@ -92,7 +179,7 @@ body {
 .btn--red {
     color: white;
     background-color: #ffb13b;
-    border-color: #ffb13b; 
+    border-color: #ffb13b;
 }
 
 .btn--red:hover,
@@ -102,4 +189,71 @@ body {
     background-color: #c78219;
     border-color: #c78219;
     color: white;
+}
+
+/* Alert */ 
+
+.alert-container .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    color: #3e2802;
+    background-color: #ffd600;
+    border-color: #ffd600;
+    padding: 5px 15px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+.navbar-right .navbar-text {
+    color: white;
+}
+
+/* Page Headers */
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+/* Quotes */ 
+
+blockquote.quote {
+    border-left: 0;
+}
+
+.quotes .page-header {
+    margin-bottom: 25px;
+}
+
+/* Features */
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature .glyphicon {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #0c0404;
 }
